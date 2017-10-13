@@ -25,3 +25,12 @@ class QingtingItem(Item):
     album = Field()
     file = Field()
     website = Field()
+
+
+class LizhiItem(Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    title = Field()
+    user = Field()
+    file = Field()
+    website = Field()

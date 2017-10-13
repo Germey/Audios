@@ -100,7 +100,8 @@ ENV/
 # mypy
 .mypy_cache/
 
-喜马拉雅/
+喜马拉雅FM/
 蜻蜓FM/
+荔枝FM/
 
 .idea/

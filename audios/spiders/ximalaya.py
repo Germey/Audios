@@ -62,5 +62,5 @@ class XimalayaSpider(Spider):
         item['title'] = data.get('title')
         item['user'] = data.get('nickname')
         item['file'] = data.get('play_path')
-        item['website'] = '喜马拉雅'
+        item['website'] = '喜马拉雅FM'
         yield item

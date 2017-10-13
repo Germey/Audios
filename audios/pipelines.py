@@ -35,3 +35,17 @@ class QingtingPipeline():
         with open(file, 'wb') as f:
             f.write(content)
         return item
+
+
+
+class LizhiPipeline():
+    def process_item(self, item, spider):
+        path = '{website}/{user}'.format(website=item['website'], user=item['user'])
+        file = '{website}/{user}/{title}.mp3'.format(website=item['website'],
+                                                      user=item['user'], title=item['title'])
+        if not exists(path):
+            makedirs(path)
+        content = requests.get(item['file']).content
+        with open(file, 'wb') as f:
+            f.write(content)
+        return item
