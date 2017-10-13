@@ -33,6 +33,12 @@ class XimalayaSpider(Spider):
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
     }
     
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'audios.pipelines.XimalayaPipeline': 300,
+        }
+    }
+    
     def start_requests(self):
         for url in self.start_urls:
             yield Request(url.format(page=1), headers=self.headers, callback=self.parse_index, meta={'url': url})

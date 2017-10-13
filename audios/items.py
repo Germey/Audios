@@ -16,3 +16,12 @@ class XimalayaItem(Item):
     user = Field()
     file = Field()
     website = Field()
+
+
+class QingtingItem(Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    title = Field()
+    album = Field()
+    file = Field()
+    website = Field()

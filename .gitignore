@@ -101,5 +101,6 @@ ENV/
 .mypy_cache/
 
 喜马拉雅/
+蜻蜓FM/
 
 .idea/
