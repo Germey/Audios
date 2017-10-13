@@ -8,7 +8,9 @@ from audios.items import QingtingItem
 class QingtingSpider(Spider):
     name = 'qingting'
     allowed_domains = ['www.qingting.fm', 'i.qingting.fm']
-    start_ids = ['206314']
+    start_ids = ['206314', '222994', '222993', '143128', '220530', '142452', '216854', '154780', '200484', '228437',
+                 '221283', '216128', '227544', '219684', '208797', '224935', '224191', '224074', '227846', '220016',
+                 '210951']
     
     album_url = 'http://i.qingting.fm/wapi/channels/{id}'
     list_url = 'http://i.qingting.fm/wapi/channels/{id}/programs/page/{page}/pagesize/{pagesize}'
